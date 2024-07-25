@@ -1,0 +1,480 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+header .navbar {
+  padding: 20px 50px;
+  background-color: black;
+  color: white;
+}
+header .navbar .nav-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .navbar .nav-left .icon2 {
+  margin-left: 20px;
+}
+header .navbar .nav-left .icon3 {
+  margin-left: 20px;
+}
+header .navbar .nav-center {
+  text-align: center;
+}
+header .navbar .nav-center .input1 {
+  padding: 10px 70px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  background-color: black;
+  color: white;
+}
+header .navbar .nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .navbar .nav-right .img1 img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  margin-left: 10px;
+}
+header .navbar2 {
+  padding: 10px 100px 10px 50px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .navbar2 .nav-left2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .navbar2 .nav-left2 .text1 {
+  color: gray;
+  padding-left: 10px;
+}
+header .navbar2 .nav-left2 .text2 {
+  color: white;
+  padding-left: 10px;
+}
+header .navbar2 .nav-right2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .navbar2 .nav-right2 .rain {
+  padding-left: 20px;
+}
+header .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+header .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+header .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0px;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  border: 2px solid gray;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+header .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+header input:checked + .slider {
+  background-color: #2196F3;
+}
+header input:checked + .slider:before {
+  transform: translateX(26px);
+}
+header .round {
+  border-radius: 34px;
+}
+
+main #section1 {
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+}
+main #section1 .first-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main #section1 .first-left .images2 img {
+  width: 257px;
+  height: 226px;
+  gap: 0px;
+  border-radius: 25px;
+  opacity: 0px;
+}
+main #section1 .first-left .all-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 11px;
+}
+main #section1 .first-left .all-box .box1 {
+  margin-left: 10px;
+  border: 2px solid gray;
+  border-radius: 30px;
+  text-align: center;
+}
+main #section1 .first-left .all-box .box1 img {
+  width: 50px;
+  height: 50px;
+  top: 77px;
+  left: 23px;
+  gap: 0px;
+  opacity: 0px;
+}
+main #section1 .first-left .all-box .box2 {
+  margin-left: 10px;
+  border: 2px solid gray;
+  border-radius: 30px;
+  padding: 20px 11px;
+  text-align: center;
+}
+main #section1 .first-left .all-box .box2 img {
+  width: 50px;
+  height: 50px;
+  top: 77px;
+  left: 23px;
+  gap: 0px;
+  opacity: 0px;
+}
+main #section1 .first-left .all-box .box3 {
+  margin-left: 10px;
+  border: 2px solid gray;
+  border-radius: 30px;
+  padding: 20px 15px;
+  text-align: center;
+}
+main #section1 .first-left .all-box .box3 img {
+  width: 50px;
+  height: 50px;
+  top: 77px;
+  left: 23px;
+  gap: 0px;
+  opacity: 0px;
+}
+main #section1 .first-right img {
+  width: 257px;
+  height: 226px;
+  gap: 0px;
+  border-radius: 25px;
+  opacity: 0px;
+}
+main #section2 {
+  padding: 20px 50px;
+  background-color: black;
+  color: white;
+}
+main #section2 .all-section2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main #section2 .all-section2 .right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main #section2 .all-section2 .right .see {
+  margin-left: 20px;
+  color: darkgray;
+}
+main #section3 {
+  padding: 20px 50px;
+  background-color: black;
+  color: white;
+}
+main #section3 .all-pic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main #section3 .all-pic .boxs {
+  width: 300px;
+  height: 520px;
+  top: 1px;
+  gap: 0px;
+  opacity: 0px;
+}
+main #section3 .all-pic .boxs .ikisi {
+  display: flex;
+}
+main #section3 .all-pic .boxs .ikisi .wind {
+  background-color: #1B1B1D;
+  width: 400px;
+  height: 100px;
+  gap: 0px;
+  opacity: 0px;
+  margin: 0px 20px 20px 0px;
+  text-align: center;
+}
+main #section3 .all-pic .boxs .ikisi .wind .yan-yana {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main #section3 .all-pic .boxs .ikisi .wind .img {
+  width: 90px;
+  height: 90px;
+  top: 67px;
+  left: 100px;
+  gap: 0px;
+  opacity: 0px;
+}
+main #section3 .all-pic .boxs .ikisi .wind2 {
+  width: 290px;
+  height: 100px;
+  gap: 0px;
+  opacity: 0px;
+  margin: 0px 20px 20px 0px;
+  text-align: center;
+  background-color: #1B1B1D;
+}
+main #section3 .all-pic .boxs .ikisi .wind2 .yan-yana {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main #section3 .all-pic .boxs .ikisi .wind2 .img {
+  width: 90px;
+  height: 90px;
+  top: 67px;
+  left: 100px;
+  gap: 0px;
+  opacity: 0px;
+}
+main #section3 .all-pic .boxs .other-ikisi {
+  display: flex;
+}
+main #section3 .all-pic .boxs .other-ikisi .wind3 {
+  background-color: #1B1B1D;
+  width: 290px;
+  height: 100px;
+  gap: 0px;
+  opacity: 0px;
+  margin: 0px 20px 20px 0px;
+  text-align: center;
+}
+main #section3 .all-pic .boxs .other-ikisi .wind3 .yan-yana {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main #section3 .all-pic .boxs .other-ikisi .wind3 .yan-yana .yan-right img {
+  width: 20%;
+}
+main #section3 .all-pic .boxs .other-ikisi .wind4 {
+  background-color: #1B1B1D;
+  width: 290px;
+  height: 100px;
+  gap: 0px;
+  opacity: 0px;
+  margin: 0px 20px 20px 0px;
+  text-align: center;
+}
+main #section3 .all-pic .boxs .other-ikisi .wind4 img {
+  width: 30%;
+}
+main #section3 .all-pic .boxs .other-ikisi .wind4 .yan-yana {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main #section3 .all-pic .boxs .other-ikisi .wind4 .yan-yana .yan-right img {
+  width: 20%;
+}
+main #section3 .all-pic .get {
+  width: 400px;
+  height: 520px;
+  top: 1px;
+  left: 658px;
+  gap: 0px;
+  opacity: 0px;
+}
+main #section3 .all-pic .get img {
+  width: 100%;
+  position: relative;
+  border-radius: 20px;
+}
+main #section3 .all-pic .get .image-container {
+  position: relative;
+  display: inline-block; /* Ensures container only takes as much space as necessary */
+}
+main #section3 .all-pic .get .image-container img {
+  display: block; /* Ensures image doesn't have extra space underneath */
+  width: 100%; /* Ensures image fills container */
+  height: auto; /* Maintains aspect ratio */
+}
+main #section3 .all-pic .get .button {
+  position: absolute;
+  top: 260%; /* Position from top of container */
+  left: 50%; /* Position from left of container */
+  transform: translate(-50%, -50%); /* Center the button relative to its own dimensions */
+  background-color: white; /* Button background color */
+  color: black; /* Button text color */
+  padding: 10px 20px; /* Padding inside the button */
+  text-decoration: none; /* Remove underline from link */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Cursor style */
+}
+main #section3 .all-pic .hava {
+  width: 297px;
+  height: 521px;
+  left: 1095px;
+  gap: 0px;
+  opacity: 0px;
+}
+main #section3 .all-pic .hava .cloud {
+  padding: 20px 30px;
+  width: 297px;
+  height: 110px;
+  gap: 0px;
+  opacity: 0px;
+  background-color: #1B1B1D;
+  margin: 0px 20px 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: darkgray;
+  border-radius: 20px;
+}
+main #section3 .all-pic .hava .cloud .metnler {
+  font-size: 14px;
+}
+main #section3 .all-pic .hava .cloud img {
+  width: 20%;
+}
+
+@media (max-width: 1440px) {
+  header .navbar .nav-left {
+    display: flex;
+  }
+  header .navbar2 {
+    display: flex;
+  }
+  main #section1 {
+    display: flex;
+  }
+  main #section1 .first-left {
+    display: flex;
+  }
+  main #section1 .first-left .all-box .box1 {
+    padding: 20px 20px;
+  }
+  main #section3 .all-pic {
+    display: flex;
+  }
+  main #section3 .all-pic .boxs {
+    height: 520px;
+  }
+  main #section3 .all-pic .get .button {
+    top: 260%;
+  }
+}
+@media (max-width: 800px) {
+  header .navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  header .navbar2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  main #section1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  main #section1 .first-left {
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  main #section1 .first-left .all-box .box1 {
+    padding: 20px 20px;
+  }
+  main #section3 .all-pic {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  main #section3 .all-pic .boxs {
+    height: 300px;
+  }
+  main #section3 .all-pic .get .button {
+    top: 710%;
+  }
+}
+@media (max-width: 500px) {
+  header .navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  header .navbar2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  main #section1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  main #section1 .first-left {
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  main #section1 .first-left .all-box .box1 {
+    padding: 10px 1px;
+  }
+  main #section3 .all-pic {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  main #section3 .all-pic .boxs {
+    height: 300px;
+  }
+  main #section3 .all-pic .get .button {
+    top: 710%;
+  }
+}

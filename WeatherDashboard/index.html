@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./style.scss">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            
+        <title>Weather Dashboard</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     </head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-left">
+                <div class="icon1"><i class="fa-solid fa-table-columns"></i></div>
+                <div class="icon2"><i class="fa-solid fa-bell"></i></div>
+                <div class="icon3"><i class="fa-solid fa-location-dot"></i> Dhaka,Bangladesh</div>
+            </div>
+            <div class="nav-center">
+                <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                <input class="input1" type="text" placeholder="Search City">
+            </div>
+            <div class="nav-right">
+                    <div class="label">
+                        <label class="switch">
+                            <input type="checkbox" id="modeToggle">
+                            <span class="slider round"></span>
+                          </label>
+                    </div>
+                  <div class="img1"><img src="https://s3-alpha-sig.figma.com/img/c84f/8c6d/32c74800fa7451cf47a74ee4b186b79c?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EJku2fpwEmlCO-SHBzy8Jo~78Eb4GSK7MmxYaJBj38fAWJRJBlqGGXrfjfdE5-otgn3guQ2t5ao2VY~YB0KQ9f4RmDAgw6KPeb6CC9iKBcI6iV4XJUYVNmMHDOS-pKQWdSvD3KNICnTPL3DpST8e2fN~o3LfzQnBAgTRMfRn76fy2OySGYD9mj1rdehljxL8R8EhiosJXFWwBqtZJAB5rbjo8plkM-9Eo6NT5Hhe3hY4p~rzsJ2yL0jjWBo7P3f5QDCpsHVr-l2QMwNT-tLSS23v3kauAKztpP1gLcv~Y3yFgcmB4PB4osWnLnC7L~4eiJd4c0QjbOWGja47OClTAg__" alt=""></div>
+            </div>
+        </div>
+        <div class="navbar2">
+            <div class="nav-left2">
+                <div class="text1">Today</div>
+                <div class="text1">Tomorrow</div>
+                <div class="text2">Next 7days</div>
+            </div>
+            <div class="nav-right2">
+                <div class="btn1">
+                    <div class="label">
+                        <label class="switch">
+                            <input type="checkbox" id="modeToggle">
+                            <span class="slider round"></span>
+                          </label>
+                    </div>
+                </div>
+                <div class="rain">Chance Of Rain</div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="section1">
+            <div class="first-left">
+              <div class="images2">
+                <img src="https://assets-global.website-files.com/65b9cce908217ff5cd624b00/65bcd5506dfe11d25edd8ace_about-image-04.jpg" alt="">
+              </div>
+              <div class="all-box">
+                <div class="box1">
+                    <h6>SAT</h6>
+                    <hr>
+                    <img src="https://s3-alpha-sig.figma.com/img/b78f/1462/48c3e4f7d7bd7ce8ec47f8ea9019f601?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ncOsISyuce7mG8~SBYFb6vMN0UTRqecbhj7KQ~wdtIkDNFUMKvMijCluzRLS275mA9-nsFIlTaV-In0hf1-c-IGZjFyrjR5Or100MXtNitZdQtinLHmDUX5oACEtnZ0ZUFBbjnQ6pkKnSPZhtUB2pPa4H3xFP03lA4YcnoKfqkxGlau2xPUmafjCccKlvvG~rDE01MbIz6n1xFSN8wg0vLjxQZ6xjegf8hQV~ErVGKjsEkwuv8q8RZ7fSsDcA6l6ojFooszE9Coz1j2WLHtJF1ABdDcfsp1A6v-tMtbETsWPn0q-jfqKvdRM2lRm~4GXsiu7Pb5QJ~TlKJnlBXhleA__" alt="">
+                    <h2>10°</h2>
+                </div>
+    
+                <div class="box1">
+                    <h6>SUN</h6>
+                    <hr>
+                    <img src="https://s3-alpha-sig.figma.com/img/dc0c/2a2b/011feb650362e1963cbdec357c3664be?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PFmrT7yBvG52t3WDYZcxOKdQA-GoxQYl2xPCw31lYRDlrUHrRqE4JXc6HbBXJc4T07VyDpF96GLJMesu33CJxWmE2RieAy0hpZvmbpoiNCwqjC0ObBIgxG~tDq802I3TNO~~LZSh1~NAvQ-j9H8BPqe~hShKyvGeuTFJs9Vo~7drcagsGXaXkoxgTuaHuETThJZ6I8NcEE6FPhDSurmzlonDVkZ7fMsSqMQJtLlxjHDmjqLME1kIw-SB0m9OXCWGmaYiWZnRmlwX20mhrrFrOVQSW0OHfHH7W0J543z-QowU6498xu4lqrTISQRXeK9dGtDpZaGRLD1kmEjImHaPXw__" alt="">
+                    <h2>15°</h2>
+                </div>
+                <div class="box1">
+                    <h6>MON</h6>
+                    <hr>
+                    <img src="https://s3-alpha-sig.figma.com/img/ba5b/0f26/88e94c5d523e18d7f9b788dadfd69e70?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=beG1bMOnvm2bLVKhO3GPhVdlC-FrhWFKxxFeJ32gkwvtnW5SzAz5xHqGLitjf~FBQEDglZkTQk-2jqMa2TKdo2OSceJvMzYNv1hXLxWpc2GJRpiNeJYYSBOtLa5BeZ1lSVOpqyOMmz4L13eZaP0xuwbK18neyvaGmjdDP-oAqy3CNJRhZFRixTt0OldjSq938ZSHlqP4MZlCK6KVEMdw0fFSjFxdB7Mi2imbt12sb9zRIikUwJnkhqT-u6z5awwOn~~9tUGmC3TCsLaDBqxuu3eF5v1EVuKNtzB8IvcAq3Knd~8lI8n-azS4L8arTMKPU59lkYXGU19TLwRuxcaiMQ__" alt="">
+                    <h2>11°</h2>
+                </div>
+                <div class="box1">
+                    <h6>TUE</h6>
+                    <hr>
+                    <img src="https://s3-alpha-sig.figma.com/img/ea43/d3f9/1738b9c565e7b1bd71a4b4c330a49198?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TpjxntgzuX~Uw8R1D~3EL5sLmnKA5Nv8-o9xjh3HQ8UV8K4OvXyKjBDhC9TzfqBcmaFUpDcg6QdxZdrNyoHUxlfgtwtD7yH1yImjntOtlI54QqY3wrbtZe9EGC0TwviJPoelq9fZjZ70t02Q-tMuiNS0fwSooh~G5-Q3xANvFXRa7YsF1KS9gqW-PGU1rDuKQ6lsfFQaE6f5T72UfnmiE5QiEL3NWyMDKTq9YYsVy59LAn9rgaDSkiRV3NIzLn81ke7gm3nG6Hufx45kYxTTo~RlMFpWVQCy1bNEilDExS4tb7OuoXwChxfznr9VZWBwBAIPc0XRu5lh0U5HLGSalA__" alt="">
+                   <h2>10°</h2>
+                </div>
+                <div class="box1">
+                    <h6>WED</h6>
+                    <hr>
+                    <img src="https://s3-alpha-sig.figma.com/img/9a9a/673f/346cb5bf4b13dbd17098349b8a098f53?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qkiCnDHxJqyaf6roMvz9gW986d4AOg4uO~4JBJfCUjFr9eFZcgHuUHpT-7UpPvu0rezI6q8c2aSQ0vM3rizjAY6i-UtsRV5XwEpIb-GyYaq5AxktWchFTa3d8hXmJVFO5czF4Mw5E8F5gtcD2obnJKdVIiXto~PAhUOrbh9H6ulP41WPSRL4Qu68WU5b6-Vj~zfz38xSQHk1yd-rPVZUwEekhzemYy3getMk9yp1juR7O9UdU9XIcXM-tL1G-KP3VnftdBntqdJNTjBLz1vyljTUYtIinuLOxW4T-c0WZLzO1kaRA4oZ0DaxrMU2IamZENG6LWe-KJWWtMV30rk1Kg__" alt="">
+                   <h2>12°</h2>
+                </div>
+                <div class="box1">
+                    <h6>THU</h6>
+                    <hr>
+                    <img src="https://s3-alpha-sig.figma.com/img/bd8c/f738/2b63859ba1d97d348047003a4b9b8237?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HXnr7h-Ke5TIFbpBKDdDjVRfltHWxahjVtgmUkFi9ut-csEj-9WOVTQzMUHxZwhUVrAWf8m2b76GO0Eh1ZekUrpmGiuxk4iqMEsspTKEdf6RuXB7MVucvNP~0myIkePG6xney-U9PmyIl45pM8CvxZSndrOrQFK1Wt6Rb4F5hHMxh27k~x4K8jse83v7Gs6m4hW5zI7ViQ1VE4s8hAGy9JvH7ILJKLeOppcAk5AL-0oTKzhtqQu9uRsJ~FCxzw2er~d8eee9Y0PN~7h13oheiijz3XF4j1SZS2iJ-kU26q5oIxZz8KTo3VI77p0OQW8aQUB3nxErJ-onYExA~BjrsA__" alt="">
+                   <h2>10°</h2>
+                </div>
+              </div>
+            </div>
+            <div class="first-right">
+                <img src="https://assets-global.website-files.com/65b9cce908217ff5cd624b00/65bcd5506dfe11d25edd8ace_about-image-04.jpg" alt="">
+            </div>
+        </div>
+        <div id="section2">
+            <div class="all-section2">
+                <div class="left">Today's Overview</div>
+                <div class="right">
+                   <div class="other">Other Cities</div>
+                   <div class="see">See All</div>
+                </div>
+            </div>
+        </div>
+        <div id="section3">
+            <div class="all-pic">
+                <div class="boxs">
+                    <div class="ikisi">
+                        <div class="wind">
+                            <h6>Wind Status</h6>
+                            <img src="" alt="">
+                            <div class="yan-yana">
+                                <div class="yan-left">6.20 AM</div>
+                                <div class="yan-right"><strong>7.50</strong> km/h</div>
+                            </div>
+                        </div>
+                        <div class="wind2">
+                            <h6>UV Indesx</h6>
+                            <img src="" alt="">
+                            <h6><strong>5.50</strong> uv</h6>
+                        </div>
+                    </div>
+                  <div class="other-ikisi">
+                    <div class="wind3">
+                        <h6>Humidity</h6>
+                        <img src="" alt="">
+                        <div class="yan-yana">
+                            <div class="yan-left">84%</div>
+                            <div class="yan-right"> <img src="https://s3-alpha-sig.figma.com/img/7f18/cd43/4a3fd37dc0be479eaaf1aeba9b395b37?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DXEwPLvzlCCV01lbARAa-pN2UQsW-hxcOErYn3uSQ3Ue4QyWMkQJV3C~XwGELiOo55ib9NjP8e-2X96HELflrbukHUTqzy89QQPRneUywVr6K72o0m4poJ8B4XuW8FXxp6okDi7Sbo10LfDJyNrDx4Zco3PVfdUrNmx8ku73rtPcYA~yLj6Mxf0UB5tbGT96jL~utd2tgYjOQJGB677-Ndme2XgH64NJJx3psGH1i1-46yD-ix0wzsJ2cOqtgCJVn-fEgigbEB9scM6M9NLfdqSN831JGNZaXAtyNx7s0vRMopx68hc-~Yele5WApMX5ZWgehbGeJqBRSAQCHXhDaA__" alt="">The dew point is 270 
+                                right now</div>
+                        </div>
+                    </div>
+                    <div class="wind4">
+                        <h6>Visibility</h6>
+                        <img src="https://s3-alpha-sig.figma.com/img/033b/065b/71b8506511447a7e143e53f37ba03578?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AXwxUx-yXbN0cL2nWjr3O2ZNCo703jdb28lLpAuCTlrKrRoTXBADjoBh-iwi31dGQQORVDGanJ8YtdqtCZoZ5JDHls~Y4Rxd5EglHQWWcTA-ysuEDclvwaPZxgCL2sbummVuTCSh9zUdjkEZ7RyFrcpXHyAGSI0Figoq5X8UVjrt-GuBjYoKxHw3nz5tg~S4riFgoJ~LtsUAIdYY3wBmKmG14Z9sznJrSKLkT~FfCpRn6r3leKWwCUUaBxx6ILjGv0BMzt-n~IQDNreyrcfXBqclxYjfPo4PYEF6tQIU6MzUzMrSFvQ75AQEkpCdk3TdI0d1dI8A-oBoJa4pS7t9cg__"
+                         alt="">
+                         <div class="yan-yana">
+                            <div class="yan-left"><strong>0.4</strong> km</div>
+                            <div class="yan-right">
+                                 <img src="https://s3-alpha-sig.figma.com/img/7f18/cd43/4a3fd37dc0be479eaaf1aeba9b395b37?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DXEwPLvzlCCV01lbARAa-pN2UQsW-hxcOErYn3uSQ3Ue4QyWMkQJV3C~XwGELiOo55ib9NjP8e-2X96HELflrbukHUTqzy89QQPRneUywVr6K72o0m4poJ8B4XuW8FXxp6okDi7Sbo10LfDJyNrDx4Zco3PVfdUrNmx8ku73rtPcYA~yLj6Mxf0UB5tbGT96jL~utd2tgYjOQJGB677-Ndme2XgH64NJJx3psGH1i1-46yD-ix0wzsJ2cOqtgCJVn-fEgigbEB9scM6M9NLfdqSN831JGNZaXAtyNx7s0vRMopx68hc-~Yele5WApMX5ZWgehbGeJqBRSAQCHXhDaA__" alt="">The dew point is 270 
+                                right now</div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="get">
+                   <img src="https://s3-alpha-sig.figma.com/img/2468/6455/f33933b63012c284ff4e8adc22f40ae8?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ufy0NbnEhvuSvOjQw82-14lxgGsL8B3RhlYwRdcsIMR6keQdjQ9L5AzHXtr7jkAGNW~w72GkAZUr8awP-WtVJADIW-ipOAUQHVrDpVeUyHlqjhrHON7dWWotqnZH4Ji49khz9P1QoiQke1mnJJ0cwsOqIAqUWU3Eqh~Jn5COHYKSLSAYcsC4bUy7qWRVhfZXeZ-5rTmetcgbF7VXCkcx382g-xsOxVCNH1U5YvU6WeHKJ8oDYxP0j3E0zDm~qVNSDRbr4uGyNW2Gds~fS~duQ828QHzl44p1LaLPaxIXfbJPJCcd82q~3WECV56njiUx5j-zGufSV4vjoyqvYFFCFw__" alt="">
+                   <a href="#" class="button"><strong>GET STARTED</strong></a>
+                </div>
+                <div class="hava">
+                    <div class="cloud">
+                        <div class="metnler">Chaina <br> <strong>Beijing</strong> <br>Cloudy</div>
+                       <img src="https://s3-alpha-sig.figma.com/img/ea43/d3f9/1738b9c565e7b1bd71a4b4c330a49198?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TpjxntgzuX~Uw8R1D~3EL5sLmnKA5Nv8-o9xjh3HQ8UV8K4OvXyKjBDhC9TzfqBcmaFUpDcg6QdxZdrNyoHUxlfgtwtD7yH1yImjntOtlI54QqY3wrbtZe9EGC0TwviJPoelq9fZjZ70t02Q-tMuiNS0fwSooh~G5-Q3xANvFXRa7YsF1KS9gqW-PGU1rDuKQ6lsfFQaE6f5T72UfnmiE5QiEL3NWyMDKTq9YYsVy59LAn9rgaDSkiRV3NIzLn81ke7gm3nG6Hufx45kYxTTo~RlMFpWVQCy1bNEilDExS4tb7OuoXwChxfznr9VZWBwBAIPc0XRu5lh0U5HLGSalA__" alt="">
+                      
+                    </div>
+                    <div class="cloud">
+                        <div class="metnler">Us <br> California <br>Windy</div>
+                        <img src="https://s3-alpha-sig.figma.com/img/bd8c/f738/2b63859ba1d97d348047003a4b9b8237?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HXnr7h-Ke5TIFbpBKDdDjVRfltHWxahjVtgmUkFi9ut-csEj-9WOVTQzMUHxZwhUVrAWf8m2b76GO0Eh1ZekUrpmGiuxk4iqMEsspTKEdf6RuXB7MVucvNP~0myIkePG6xney-U9PmyIl45pM8CvxZSndrOrQFK1Wt6Rb4F5hHMxh27k~x4K8jse83v7Gs6m4hW5zI7ViQ1VE4s8hAGy9JvH7ILJKLeOppcAk5AL-0oTKzhtqQu9uRsJ~FCxzw2er~d8eee9Y0PN~7h13oheiijz3XF4j1SZS2iJ-kU26q5oIxZz8KTo3VI77p0OQW8aQUB3nxErJ-onYExA~BjrsA__" alt="">
+                  
+                    </div>
+                    <div class="cloud">
+                        <div class="metnler">Dubai <br> Arab Emirates <br>Mostly Emirates</div>
+                        <img src="https://s3-alpha-sig.figma.com/img/ba5b/0f26/88e94c5d523e18d7f9b788dadfd69e70?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=beG1bMOnvm2bLVKhO3GPhVdlC-FrhWFKxxFeJ32gkwvtnW5SzAz5xHqGLitjf~FBQEDglZkTQk-2jqMa2TKdo2OSceJvMzYNv1hXLxWpc2GJRpiNeJYYSBOtLa5BeZ1lSVOpqyOMmz4L13eZaP0xuwbK18neyvaGmjdDP-oAqy3CNJRhZFRixTt0OldjSq938ZSHlqP4MZlCK6KVEMdw0fFSjFxdB7Mi2imbt12sb9zRIikUwJnkhqT-u6z5awwOn~~9tUGmC3TCsLaDBqxuu3eF5v1EVuKNtzB8IvcAq3Knd~8lI8n-azS4L8arTMKPU59lkYXGU19TLwRuxcaiMQ__" alt="">
+                   
+                    </div>
+                    <div class="cloud">
+                        <div class="metnler">Canada <br> Charlottetown <br>Light SnowShower</div>
+                        <img src="https://s3-alpha-sig.figma.com/img/b78f/1462/48c3e4f7d7bd7ce8ec47f8ea9019f601?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ncOsISyuce7mG8~SBYFb6vMN0UTRqecbhj7KQ~wdtIkDNFUMKvMijCluzRLS275mA9-nsFIlTaV-In0hf1-c-IGZjFyrjR5Or100MXtNitZdQtinLHmDUX5oACEtnZ0ZUFBbjnQ6pkKnSPZhtUB2pPa4H3xFP03lA4YcnoKfqkxGlau2xPUmafjCccKlvvG~rDE01MbIz6n1xFSN8wg0vLjxQZ6xjegf8hQV~ErVGKjsEkwuv8q8RZ7fSsDcA6l6ojFooszE9Coz1j2WLHtJF1ABdDcfsp1A6v-tMtbETsWPn0q-jfqKvdRM2lRm~4GXsiu7Pb5QJ~TlKJnlBXhleA__" alt="">
+                   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
